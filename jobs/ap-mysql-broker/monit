@@ -1,0 +1,5 @@
+check process ap-mysql-broker
+  with pidfile /var/vcap/sys/run/ap-mysql-broker/ap-mysql-broker.pid
+  start program "/var/vcap/jobs/ap-mysql-broker/bin/monit_debugger ap-mysql-broker_ctl '/var/vcap/jobs/ap-mysql-broker/bin/ap-mysql-broker_ctl start'"
+  stop program "/var/vcap/jobs/ap-mysql-broker/bin/monit_debugger ap-mysql-broker_ctl '/var/vcap/jobs/ap-mysql-broker/bin/ap-mysql-broker_ctl stop'"
+  group vcap

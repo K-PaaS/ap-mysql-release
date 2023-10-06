@@ -1,3 +1,0 @@
-set -e
-
-cp -a op-mysql-java-broker/* ${BOSH_INSTALL_TARGET}

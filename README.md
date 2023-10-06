@@ -70,56 +70,45 @@
   
 
 
-## PAAS-TA-MYSQL-RELEASE   
-
-### Notices   
-  - Use PAAS-TA-MYSQL-RELEASE >= v.2.0.1   
-    - PaaS-TA >= v.5.0.2   
-    - service-deployment >= v5.0.2   
-  - Use PAAS-TA-MYSQL-RELEASE =< v.2.0.0   
-    - PaaS-TA =< v.5.0.1   
-    - service-deployment =< v5.0.1   
-
-### PaaS-TA Mysql Release Configuration    
+## ap-mysql-release
+### Application Platform Mysql Release Configuration
   - mysql : N machine(s)   
-  - mysql-broker : 1 machine   
+  - ap-mysql-broker : 1 machine
   - proxy : 1 machine   
-  - arbitrator : 1 machine   
 
-### Create PaaS-TA Mysql Release   
-  - Download the latest PaaS-TA Mysql Release    
+### Create Application Platform Mysql Release
+  - Download the latest Application Platform Mysql Release
     ```   
-    $ git clone https://github.com/PaaS-TA/PAAS-TA-MYSQL-RELEASE.git
-    $ cd PAAS-TA-MYSQL-RELEASE   
-    ```   
+    $ git clone https://github.com/K-PaaS/ap-mysql-release.git
+    $ cd ap-mysql-release
   - Download & Copy "source files" into the src directory   
     ```   
     ## download source files   
-    $ wget -O src.zip https://nextcloud.paas-ta.org/index.php/s/p3i648xGRDJNSC9/download
+    $ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/QX8xRCajBX2LzGk/download
 
     ## unzip download source files   
     $ unzip src.zip   
 
     ## final src directory (2-depth)  
     src
-      ├── op-mysql-java-broker
-      │   └── openpaas-service-java-broker-mysql.jar
+      ├── ap-mysql-broker
+      │   └── ap-mysql-broker.jar
       └── openjdk
           └── openjdk-1.8.0_45.tar.gz
 
       
     ```   
-  - Create PaaS-TA Mysql Release   
+  - Create Application Platform Mysql Release
     ```   
     ## <VERSION> :: release version (e.g. 2.1.2)   
-    ## <RELEASE_TARBALL_PATH> :: release file path (e.g. /home/ubuntu/workspace/paasta-mysql-<VERSION>.tgz)   
-    $ bosh -e <bosh_name> create-release --name=paasta-mysql --version=<VERSION> --tarball=<RELEASE_TARBALL_PATH> --force   
+    ## <RELEASE_TARBALL_PATH> :: release file path (e.g. /home/ubuntu/workspace/ap-mysql-release-<VERSION>.tgz)
+    $ bosh -e <bosh_name> create-release --name=ap-mysql --version=<VERSION> --tarball=<RELEASE_TARBALL_PATH> --force
     ```   
 ### Deployment   
-- https://github.com/PaaS-TA/service-deployment   
+- https://github.com/K-PaaS/service-deployment
 
 ## Contributors ✨
 
-<a href="https://github.com/PaaS-TA/PAAS-TA-MYSQL-RELEASE/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=PaaS-TA/PAAS-TA-MYSQL-RELEASE" />
+<a href="https://github.com/K-PaaS/ap-mysql-release/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=K-PaaS/ap-mysql-release" />
 </a>
