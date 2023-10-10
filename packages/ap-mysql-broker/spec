@@ -1,0 +1,7 @@
+---
+name: ap-mysql-broker
+
+dependencies: []
+
+files: 
+- ap-mysql-broker/ap-mysql-broker.jar
