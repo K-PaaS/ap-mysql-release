@@ -17,12 +17,12 @@
     <td colspan=2 rowspan=9>Component<br>/ 서비스</td>
     <td colspan=2><a href="https://github.com/K-PaaS/cp-portal-common-api">Common API</a></td>
     <td colspan=2>-</td>
-    <td colspan=2><a href="https://github.com/K-PaaS/ap-mongodb-shard-release">🚩 MongoDB</a></td>
+    <td colspan=2><a href="https://github.com/K-PaaS/ap-mongodb-shard-release">MongoDB</a></td>
   </tr>
   <tr align=center>
     <td colspan=2><a href="https://github.com/K-PaaS/cp-metrics-api">Metric API</a></td>
     <td colspan=2>  </td>
-    <td colspan=2><a href="https://github.com/K-PaaS/ap-mysql-release">MySQL</a></td>
+    <td colspan=2><a href="https://github.com/K-PaaS/ap-mysql-release">🚩 MySQL</a></td>
   </tr>
   <tr align=center>
     <td colspan=2><a href="https://github.com/K-PaaS/cp-portal-api">Portal API</a></td>
